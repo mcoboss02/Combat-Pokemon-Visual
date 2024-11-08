@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Pokemon Selection" content="This is the Pokemon Selection page" />
+  <meta author="Manuel Cobos Solís" />
+  <meta description="This is the Pokemon Selection page" />
+  <meta keywords="HTML, CSS, JavaScript, Pokemon, Selection" />
+  <title>Pokémon Selection - Stage 1</title>
+  <link rel="stylesheet" href="../styles/Stage1.css">
+</head>
+
+<body>
+  <header>
+    <h1>Selecciona tu Pokémon</h1>
+  </header>
+  <main>
+    <section id="pokemon-list" class="pokemon-list">
+      <!-- Pokémon cards will be dynamically inserted here -->
+    </section>
+    <aside id="selected-pokemon" class="selected-pokemon">
+      <h2>Tu Pokémon Seleccionado</h2>
+      <div id="pokemon-details">
+        <p>Selecciona un Pokémon para ver sus detalles.</p>
+      </div>
+      <button id="confirm-selection" disabled>Confirmar Selección</button>
+    </aside>
+  </main>
+  <footer>
+    <p>© 2024 Combate Pokémon Visual</p>
+  </footer>
+  <script src="../data/Pokemons.js"></script>
+  <script src="../scripts/js/Stage1.js" type="module"></script>
+</body>
+
+</html>

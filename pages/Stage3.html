@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Pokemon Combat" content="This is the Pokemon Combat page" />
+    <meta author="Manuel Cobos Solís" />
+    <meta description="This is the Pokemon Combat page" />
+    <meta keywords="HTML, CSS, JavaScript, Pokemon, Combat" />
+    <title>Combate Pokémon - Stage 3</title>
+    <link rel="stylesheet" href="../styles/Stage3.css">
+</head>
+
+<body>
+    <main>
+        <div id="battle-arena">
+            <div id="player-pokemon" class="pokemon-container">
+                <div class="stats">
+                    <h2 id="player-name"></h2>
+                    <div class="hp-bar">
+                        <span>HP:</span>
+                        <progress id="player-hp"></progress>
+                        <span class="current-hp" id="player-current-hp">000/000</span>
+                    </div>
+                </div>
+                <img id="player-img" src="" alt="Jugador Pokémon">
+            </div>
+
+            <div id="opponent-pokemon" class="pokemon-container">
+                <div class="stats">
+                    <h2 id="opponent-name"></h2>
+                    <div class="hp-bar">
+                        <span>HP:</span>
+                        <progress id="opponent-hp"></progress>
+                        <span class="current-hp" id="opponent-current-hp">000/000</span>
+                    </div>
+                </div>
+                <img id="opponent-img" src="" alt="Oponente Pokémon">
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="attack-btn">Atacar</button>
+            <button id="special-btn">Especial</button>
+            <button id="heal-btn">Curarse</button>
+        </div>
+
+        <div id="popup" class="hidden">
+            <div id="popup-content">
+                <h2 id="popup-message"></h2>
+                <button id="popup-restart">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="log-container">
+            <h3>Registro de Combate</h3>
+            <ul id="combat-log"></ul>
+        </div>
+    </main>
+
+    <script src="../scripts/js/CombatLogic.js" type="module"></script>
+    <script src="../scripts/js/Stage3.js" type="module"></script>
+</body>
+
+</html>
